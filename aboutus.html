@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h2,h1{
+    padding: 15px;
+}
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  border-radius: 15px;
+}
+
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #090909;
+  color: white;
+}
+
+.container {
+  padding: 10px 16px;
+}
+
+.container p{
+    padding: 2px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a class="active" href="aboutus.html"><i class="fa fa-fw fa-circle"></i> About us</a>
+        <a href="login page2.html"><i class="fa fa-fw fa-user"></i> Login</a>
+      </div>
+      <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>The site focus mainly on the user experience</p>
+        <p>It uses JavaScript to display the Interactive Calander.</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> -->
+            <div class="container">
+              <h2>Suresh Jangidd</h2>
+              <p class="title">Co-Founder</p>
+              <p>Worked on JavaScript.</p>
+              <p>suresh@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <!-- <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"> -->
+            <div class="container">
+              <h2>Dona Dutta</h2>
+              <p class="title">Co-Founder</p>
+              <p>Worked on the Login Page and the About Us Page.</p>
+              <p>dona@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <!-- <img src="/w3images/team3.jpg" alt="John" style="width:100%"> -->
+            <div class="container">
+              <h2>Bishwajit Ray</h2>
+              <p class="title">Co-Founder</p>
+              <p>Worked on the Navigation Menu.</p>
+              <p>ray@gmail.com.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
